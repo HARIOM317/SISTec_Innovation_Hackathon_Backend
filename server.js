@@ -7,7 +7,7 @@ const errorMiddleware = require('./middlewares/error-middleware');
 
 // lets solve cors policy 
 const corsOptions = {
-    origin:" http://localhost:3000",
+    origin:" https://sistec-innovation-hackathon-backend.onrender.com",
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
