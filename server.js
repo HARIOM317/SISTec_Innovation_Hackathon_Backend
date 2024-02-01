@@ -7,7 +7,7 @@ const errorMiddleware = require('./middlewares/error-middleware');
 
 // lets solve cors policy 
 const corsOptions = {
-    origin:"https://sihfrontend-24kn6qvnk-harsh-kamdes-projects.vercel.app",
+    origin:"https://sihfrontend.vercel.app",
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
