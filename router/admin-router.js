@@ -11,6 +11,7 @@ router.route("/add-problem-statement").post(authMiddleware,adminController.creat
 router.route("/add-finale-team").post(authMiddleware,adminController.addFinaleTeams);
 router.route("/getAllDataCount").get(authMiddleware,adminController.getAllDataCount);
 router.route("/contacts/delete/:id").delete(authMiddleware,adminController.deleteContactById);
+router.route("/problem-statement/deleteAll").delete(authMiddleware,adminController.deleteALLProblemStatement);
 
 // router.route("/finale-teams").get(authMiddleware,adminController.getFinaleTeams);
 
