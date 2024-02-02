@@ -7,6 +7,7 @@ const problemStatementSchema = new Schema({
     category: { type: String, required: true },
     PSNumber: { type: String, required: true },
     domainBucket: { type: String, required: true },
+    description: { type: String, required: true },
 });
 
 const finaleStatementSchema = new Schema({
