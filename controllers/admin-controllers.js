@@ -89,6 +89,15 @@ const deleteContactById = async (req, res) =>{
     }
 }
 
+const deleteALLProblemStatement = async (req, res)=>{
+    try {
+        await PSModel.ProblemStatement.deleteMany();
+        return res.status(200).json({message:"All PS Removed Successfully !"});
+    } catch (error) {
+        next(error);
+    }
+}
+
 
 module.exports = {
     getAllUsers,
@@ -97,5 +106,6 @@ module.exports = {
     createProblemStatement, 
     addFinaleTeams,
     getAllDataCount,
-    deleteContactById
+    deleteContactById,
+    deleteALLProblemStatement,
 };
