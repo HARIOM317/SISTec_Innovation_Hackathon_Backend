@@ -98,7 +98,7 @@ const deleteALLProblemStatement = async (req, res)=>{
     }
 }
 
-const deleteALLFinale = async (req, res)=>{
+const deleteAllFinale = async (req, res)=>{
     try {
         await PSModel.ResultStatement.deleteMany();
         return res.status(200).json({message:"All Finale Teams Removed Successfully !"});
@@ -117,5 +117,5 @@ module.exports = {
     getAllDataCount,
     deleteContactById,
     deleteALLProblemStatement,
-    deleteAllFinale,
+    deleteAllFinale
 };
